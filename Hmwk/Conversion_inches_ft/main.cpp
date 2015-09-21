@@ -46,9 +46,9 @@ int main(int argc, char** argv) {
     //Binary Assembly implementation
         //Declare variables
         unsigned char R7=in;                     //BP  0WD 7
-        unsigned int  R8=0b101010101010101010110;//BP-24WD24
-        unsigned int  R6=R8*R7;                  //BP-24WD31
-        R6>>=24;                                 //BP  0WD 7
+        unsigned int  R8=0b101010101010101010110;//BP-24WD21
+        unsigned int  R6=R8*R7;                  //BP-24WD28
+        R6>>=24;                                 //BP  0WD 4
         cout<<static_cast<int>(R7)<<"(in) = "
                 <<static_cast<int>(R6)<<"(ft)"<<endl;
         cout<<"Binary Conversion in to ft = "<<R8<<endl;
