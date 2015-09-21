@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Conversion_ft_inches
+PROJECTNAME=Conversion_inches_ft
 
 # Active Configuration
 DEFAULTCONF=Debug
