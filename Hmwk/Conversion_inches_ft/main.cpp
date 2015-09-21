@@ -12,7 +12,7 @@ using namespace std;
 //User Libraries
 
 //Global Constants
-const float CNVFTIN=1.0f/12.0f;
+const float CNVINFT=1.0f/12.0f;
 
 //Function Prototypes
 
@@ -21,10 +21,10 @@ int main(int argc, char** argv) {
     //C++ Check
         //Declare variables
         unsigned char in=108;
-        unsigned char ft=CNVFTIN*in;
+        unsigned char ft=CNVINFT*in;
         cout<<static_cast<int>(in)<<"(in) = "
                 <<static_cast<int>(ft)<<"(ft)"<<endl;
-        cout<<"Float Conversion ft to in = "<<CNVFTIN<<endl;
+        cout<<"Float Conversion in to ft = "<<CNVINFT<<endl;
     //Hex Assembly implementation
         //Declare variables
         unsigned char R1=in;        //BP  0WD 7
@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
         R0>>=24;                    //BP  0WD 7
         cout<<static_cast<int>(R1)<<"(in) = "
                 <<static_cast<int>(R0)<<"(ft)"<<endl;
-        cout<<"Hex Conversion ft to in = "<<R2<<endl;
+        cout<<"Hex Conversion in to ft = "<<R2<<endl;
     //Binary Assembly implementation
         //Declare variables
         unsigned char R4=in;                        //BP  0WD 7
@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
         R3>>=24;                                    //BP  0WD 7
         cout<<static_cast<int>(R4)<<"(in) = "
                 <<static_cast<int>(R3)<<"(ft)"<<endl;
-        cout<<"Binary Conversion ft to in = "<<R5<<endl;
+        cout<<"Binary Conversion in to ft = "<<R5<<endl;
     //Binary Assembly implementation
         //Declare variables
         unsigned char R7=in;                     //BP  0WD 7
@@ -51,7 +51,7 @@ int main(int argc, char** argv) {
         R6>>=24;                                 //BP  0WD 7
         cout<<static_cast<int>(R7)<<"(in) = "
                 <<static_cast<int>(R6)<<"(ft)"<<endl;
-        cout<<"Binary Conversion ft to in = "<<R8<<endl;
+        cout<<"Binary Conversion in to ft = "<<R8<<endl;
     //Exit stage right
     return 0;
 }
